@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  background: linear-gradient(56deg,rgb(255, 218, 6),rgba(22, 81, 230, 0.853));
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper{
+  width: 40%;
+display: grid;
+grid-gap: 10px;
+grid-template-columns: repeat(6, 100px);
+grid-template-rows: repeat(3, 100px);
+grid-auto-flow: column;
+
+}
+
+.box{
+  background: rgba(2,2,2,0.3);
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 6px;
+
+}
+
+.box:nth-child(even){
+  background: rgba(150,150,150,0.3);
+
+}
