@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #ccc;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns:  40% 30% 30% ;
+  grid-gap: 10px;
+
+}
+
+.wrapper > div{
+  background: #fe3;
+  padding: 1em;
+}
+
+.wrapper > div:nth-child(odd){
+  background: #fe3456;
+}
+
