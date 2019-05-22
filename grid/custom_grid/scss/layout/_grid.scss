@@ -1,0 +1,51 @@
+@import '../base/base';
+@import '../base/vars';
+@import '../mixins/mixins';
+
+.row {
+  max-width: 114rem;
+  background-color: $white;
+  margin: 0 auto;
+  // select evrything except the last child
+  &:not(:last-child){
+    margin-bottom: $guter-vertical;
+  }
+
+  @include clearFix;
+
+  [class^="col-"] {
+    background: orange;
+    float: left;
+
+    &:not(:last-child){
+      margin-right: $guter-horizontal;
+    }
+  }
+
+  .col-1-of-2{
+    width: calc((100% - #{$guter-horizontal}) /2);
+
+  }
+
+  .col-1-of-3{
+    width: calc((100% -2 * #{$guter-horizontal}) / 3);
+
+  }
+  .col-2-of-3{
+    width: calc(2 * ((100% -2 * #{$guter-horizontal})  / 3) + #{$guter-horizontal} );
+
+  }
+  .col-1-of-4{
+    width: calc((100% -3 * #{$guter-horizontal}) / 4);
+
+  }
+  .col-2-of-4{
+    width:calc(2 * ((100% -3 * #{$guter-horizontal})  / 4) + #{$guter-horizontal} );
+
+  }
+  .col-2-of-4{
+    width:calc(3 * ((100% -3 * #{$guter-horizontal})  / 4) + 2 * #{$guter-horizontal} );
+
+  }
+}
+
