@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+}
+.container{
+  width: 86%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.item-box{
+  width: 10rem;
+  height: 10rem;
+  background: rgba(233, 26, 26, 0.838);
+  margin: 20px;
+}
+
+.box1{
+  background: pink;
+  /* position: relative; */
+  /* top: 20; */
+}
+.box2{
+  background: greenyellow;
+  position: absolute;
+  top: 0;
+  opacity: .4;
+  border: 3px solid #fe3233;
+  /* right: 0; */
+  /* left: 0; */
+  /* bottom: 0; */
+}
+.box3{
+  background: tomato;
+}
+.box4{
+  background: black;
+}
+.box5{
+  background: yellow;
+}
+.box6{
+  background: goldenrod;
+}
+
+.hoverThis{
+  transition: all .7s;
+  transform: rotate(125deg)scale(1.2);
+  background: #fe3233;
+}
