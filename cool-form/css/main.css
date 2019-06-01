@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+form {
+  height: 100%;
+  padding: 9rem;
+  box-shadow: 0 0.4rem 1.6rem 1.5rem rgba(0, 0, 0, 0.3);
+  position: relative; }
+  form input {
+    display: block;
+    width: 37%;
+    border-radius: 2rem;
+    border: none;
+    padding: 2.4rem 3rem;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    color: inherit;
+    transition: .2s ease; }
+    form input:focus {
+      border: 6px solid #274C77; }
+  form textarea {
+    border: none;
+    position: absolute;
+    top: 20%;
+    left: 63%;
+    width: 30%;
+    height: 70%;
+    border-radius: 2rem;
+    transition: .2s ease;
+    font-size: 2rem;
+    padding: 1rem; }
+    form textarea:focus {
+      border: 6px solid #274C77; }
+  form label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: .7rem;
+    transition: all .3s;
+    display: none; }
+  input:placeholder-shown + formlabel {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem); }
+
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 10px; }
+
+body {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  height: 100vh;
+  background: #6096BA; }
+
+.container {
+  width: 87%;
+  margin: 0 auto;
+  background-image: linear-gradient(105deg, rgba(163, 206, 241, 0.3) 0%, rgba(231, 236, 239, 0.9) 50%, transparent 50%), url("../images/action.jpg");
+  background-size: 100%;
+  border-radius: 3px;
+  padding: 4rem;
+  min-height: 80vh; }
+  .container h1 {
+    color: #274C77;
+    font-size: 6rem;
+    text-align: center;
+    padding: 1rem; }
+
+.jump span {
+  transition: transform .1s;
+  display: inline-block;
+  position: relative;
+  cursor: pointer; }
+
+.jump span:hover {
+  transition: all .2s ease;
+  transform: scale(1.2) rotate(30deg) translateY(-20px);
+  z-index: 1; }

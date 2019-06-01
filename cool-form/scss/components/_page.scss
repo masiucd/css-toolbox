@@ -1,0 +1,53 @@
+*::before,
+*::after,
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+font-size: 10px;
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+}
+
+body{
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  height: 100vh;
+  background: $blueL;
+}
+
+.container {
+  width: 87%;
+  margin: 0 auto;
+  background-image: linear-gradient(105deg,
+                                    rgba($blueLL, .3) 0%,
+                                    rgba($white, .9) 50%,
+                                    transparent 50%) ,
+                            url('../images/action.jpg');
+    background-size: 100%;
+    border-radius: 3px;
+  padding: 4rem;
+  min-height: 80vh;
+  h1{
+    color: $blueD;
+    font-size: 6rem;
+    text-align: center;
+    padding: 1rem;
+  }
+}
+
+.jump span {
+  transition: transform .1s;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.jump span:hover{
+  transition: all .2s ease;
+  transform: scale(1.2)rotate(30deg)translateY(-20px);
+  z-index: 1;
+}

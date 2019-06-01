@@ -1,0 +1,58 @@
+form {
+  height: 100%;
+  padding: 9rem;
+  box-shadow: 0 .4rem 1.6rem 1.5rem rgba(0,0,0,0.3);
+  position: relative;
+  input{
+    display: block;
+    width: 37%;
+    border-radius: 2rem;
+    border: none;
+    padding: 2.4rem 3rem;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    color: inherit;
+    transition: .2s ease;
+    &:focus{
+      border: 6px solid $blueD;
+    }
+  //   &:focus:invalid {
+  //     color:  $blueLL;
+  //    border: 3px solid $blueLL;
+  // }
+
+  }
+
+  textarea{
+    border: none;
+    position: absolute;
+    top: 20%;
+    left: 63%;
+    width: 30%;
+    height:  70%;
+    border-radius: 2rem;
+    transition: .2s ease;
+    font-size: 2rem;
+    padding: 1rem;
+    &:focus{
+      border: 6px solid $blueD;
+    }
+  }
+
+  label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: .7rem;
+    // display: block;
+    transition: all .3s;
+    display: none;
+  }
+
+  input:placeholder-shown + &label{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+
+}
