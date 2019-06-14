@@ -1,0 +1,19 @@
+header{
+  padding: 4rem;
+  .title_small {
+    background: rgba(6, 6, 6, 0.386);
+
+    h4{
+      font-size: 4rem;
+      text-align: center;
+      letter-spacing: 0.1em;
+      font-size: 100px;
+      font-weight: bold;
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      background-image: url(http://ajsai.jp/wp-content/themes/ajsai-theme/images/non-thumbnail.jpg);
+
+    }
+  }
+}

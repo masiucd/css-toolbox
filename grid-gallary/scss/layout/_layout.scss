@@ -1,0 +1,17 @@
+*::before,*::after,*{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+body{
+  height: 100vh;
+  background: linear-gradient(to right, rgba(45,200,222,0.8), rgb(216, 247, 11));
+}
+

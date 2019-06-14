@@ -1,0 +1,63 @@
+*::before, *::after, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: sans-serif; }
+
+body {
+  height: 100vh;
+  background: linear-gradient(to right, rgba(45, 200, 222, 0.8), #d8f70b); }
+
+#app {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(36rem, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 20px;
+  justify-items: center;
+  height: 100vh; }
+
+.card {
+  background: rgba(230, 213, 209, 0.995);
+  width: 35rem;
+  height: 40rem;
+  border-radius: .6rem;
+  box-shadow: 1.2px 1px 1px 1.1px rgba(0, 0, 0, 0.7);
+  transition: .3s ease-in-out; }
+  .card .info strong {
+    background: rgba(62, 59, 59, 0.255);
+    display: block;
+    font-size: 2rem;
+    padding: 1rem;
+    color: #fff; }
+  .card .info p {
+    font-size: 1.8rem;
+    line-height: 1.7;
+    padding: 1rem; }
+  .card .info img {
+    width: 22rem;
+    height: 20rem;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #d8f70b; }
+  .card:hover {
+    box-shadow: 3px 3px 2.7px 2.6px rgba(0, 0, 0, 0.7);
+    transform: scale(1.1); }
+
+header {
+  padding: 4rem; }
+  header .title_small {
+    background: rgba(6, 6, 6, 0.386); }
+    header .title_small h4 {
+      font-size: 4rem;
+      text-align: center;
+      letter-spacing: 0.1em;
+      font-size: 100px;
+      font-weight: bold;
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      background-image: url(http://ajsai.jp/wp-content/themes/ajsai-theme/images/non-thumbnail.jpg); }
