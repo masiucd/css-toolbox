@@ -1,0 +1,45 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.wrapper {
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -50px;
+}
+
+
+h1 {
+  margin: 0 0 20px 0;
+}
+p {
+  margin: 20px 0 0 0;
+}
+footer {
+  background: #42A5F5;
+  color: white;
+  line-height: 50px;
+  padding: 0 20px;
+}
+.footer,
+.push {
+  height: 50px;
+}
+
+.content-btn{
+  padding: .8rem 1rem;
+  background: none;
+  border: none;
+  box-shadow: 3px 3px 2px 3px #ccc;
+  border-radius: 2rem;
+  font-size: 2.5rem;
+  margin-top: 4rem;
+  display: block;
+  margin: 0 auto;
+}

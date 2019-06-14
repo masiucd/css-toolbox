@@ -1,0 +1,27 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.content {
+  min-height: 100%;
+}
+.content-inside {
+  padding: 20px;
+  padding-bottom: 50px;
+}
+.footer {
+  height: 50px;
+  margin-top: -50px;
+}
+
+.content-btn{
+  padding: .8rem 1rem;
+  background: none;
+  border: none;
+  box-shadow: 3px 3px 2px 3px #ccc;
+  border-radius: 2rem;
+  font-size: 2.5rem;
+  margin-top: 4rem;
+  display: block;
+  margin: 0 auto;
+}
