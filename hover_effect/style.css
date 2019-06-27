@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+
+  font-size: 10px;
+  font-family: 'Bangers';
+}
+
+body {
+  height: 100vh;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 96%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+.post {
+  max-width: 30rem;
+  margin: 2rem;
+  float: left;
+}
+a {
+  font-size: 4rem;
+  text-decoration: none;
+  color: #1e1f23;
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.4);
+}
+
+.fun-hover{
+  background-image: linear-gradient(to right, #25b0a9 50%, #fee603 50%);
+  background-position: 0;
+  background-size: 200%;
+  transition: all 0.4s;
+}
+
+.fun-hover:hover{
+  background-position: -100%;
+}
