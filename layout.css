@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 :root {
@@ -23,6 +23,15 @@
   --jackson-blue: rgba(31, 58, 147, 1);
 }
 
+html {
+  font-size: 10px;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
 
 p {
   line-height: 150%;
@@ -35,8 +44,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: #2E4A74;
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark-space);
+
 }
 
 h1 {
