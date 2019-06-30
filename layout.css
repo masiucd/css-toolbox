@@ -1,0 +1,112 @@
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-white: #fff;
+  --hoki: rgba(103, 128, 159, 1);
+  --dark-space: rgba(46, 49, 49, 1);
+  --shark: rgba(36, 37, 42, 1);
+  --yellow: #f0ff00;
+  --ripe-lemon: #f7ca18;
+  --saffron: #f4d03f;
+  --jaffa: #f27935;
+  --saffron-mango: #fabe58;
+  --silver: #bfbfbf;
+  --soft-red: rgba(236, 100, 75, 1);
+  --monza: rgba(207, 0, 15, 1);
+  --summer-sky: rgba(30, 139, 195, 1);
+  --jackson-blue: rgba(31, 58, 147, 1);
+}
+
+
+p {
+  line-height: 150%;
+  margin: 0 0 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2E4A74;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0 0 15px;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 0 0 12px;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 15px;
+  margin: 0 0 12px;
+  font-weight: normal;
+}
+
+
+h4,
+h5,
+h6 {
+  margin: 5px 0 5px;
+  font-weight: bold;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {}
+
+a img {
+  border: none;
+  outline: none;
+}
+
+a {
+  color: #363636;
+  outline: none;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #999;
+}
+
+
+* CLEARFIX */ .clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+/* /END CLEARFIX */
