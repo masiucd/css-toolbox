@@ -137,7 +137,7 @@ section {
    Attributes
    ================================= */
 /* exact match */
-/* a[target] {
+a[target] {
   color: darkblue;
 }
 
@@ -159,4 +159,4 @@ a[href*="google"] {
 
 a[href$=".ca"] {
   color: blue;
-} */
+}
