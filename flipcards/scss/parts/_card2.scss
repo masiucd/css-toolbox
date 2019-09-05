@@ -1,0 +1,39 @@
+.wrapper {
+	perspective: 1000;
+}
+
+.card2 {
+	background: none;
+	width: 250px;
+	height: 320px;
+	transition: 700ms ease-in;
+	transform-style: preserve-3d;
+	position: relative;
+	&:hover {
+		transform: rotateY(180deg);
+	}
+	.front-2,
+	.back-2 {
+		width: 250px;
+		height: 320px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		text-align: center;
+		// line-height: 240px;
+		backface-visibility: hidden;
+	}
+	.front-2 {
+		background: rgba(225, 31, 243, 0.76);
+		font-size: 2em;
+		text-align: center;
+	}
+	.back-2 {
+		transform: translateY(180deg);
+		background-image: url('https://images.pexels.com/photos/2439595/pexels-photo-2439595.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+		background-position: center;
+		background-attachment: fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}

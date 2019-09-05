@@ -1,0 +1,12 @@
+{
+	"name": "flipcards",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"sass": "node-sass -w scss/ -o css/"
+	},
+	"dependencies": {
+		"node-sass": "^4.12.0"
+	}
+}

@@ -1,0 +1,94 @@
+*::before,
+*::after*,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: #323232; }
+
+h1,
+a {
+  color: #fff; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  position: absolute;
+  width: 250px;
+  height: 320px;
+  background: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .container .card {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease; }
+    .container .card .front {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      backface-visibility: hidden;
+      overflow: hidden;
+      background: #ffc728;
+      color: #000; }
+    .container .card .back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      backface-visibility: hidden;
+      overflow: hidden;
+      background: #fafafa;
+      color: #333;
+      text-align: center;
+      transform: rotateY(180deg); }
+    .container .card:hover {
+      transform: rotateY(180deg); }
+
+.wrapper {
+  perspective: 1000; }
+
+.card2 {
+  background: none;
+  width: 250px;
+  height: 320px;
+  transition: 700ms ease-in;
+  transform-style: preserve-3d;
+  position: relative; }
+  .card2:hover {
+    transform: rotateY(180deg); }
+  .card2 .front-2,
+  .card2 .back-2 {
+    width: 250px;
+    height: 320px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    backface-visibility: hidden; }
+  .card2 .front-2 {
+    background: rgba(225, 31, 243, 0.76);
+    font-size: 2em;
+    text-align: center; }
+  .card2 .back-2 {
+    transform: translateY(180deg);
+    background-image: url("https://images.pexels.com/photos/2439595/pexels-photo-2439595.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat; }
