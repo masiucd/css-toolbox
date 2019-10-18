@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  min-height: 100vh;
+  font-family: 'Bangers';
+}
+
+body {
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  padding: 2rem 3rem;
+  letter-spacing: 1.5rem;
+  background: #333;
+  width: 90%;
+  color: #fff;
+  clip-path: polygon(15% 0%, 94% 0%, 85% 100%, 0% 670%);
+  box-shadow: 2px 2px 1px #ccc;
+  background-image: linear-gradient(to right, #2748b4 50%, #333 50%);
+  background-position: 0;
+  background-size: 200%;
+  transition: all 1.4s;
+
+}
+
+h1:hover {
+  background-position: -100%;
+
+}
+
+.container {
+  padding: 20px;
+  transition: margin-left 0.7s;
+  overflow: hidden;
+  width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.slide {
+  font-size: 1.5rem;
+  transition: all 300ms ease-in-out;
+}
+
+.side-menu {
+  background: #333;
+  color: #fff;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: .9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.7s;
+
+}
+
+.close {
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+  font-size: 1.2rem;
+}
+
+.list {
+  padding: 1rem 0 0 2rem;
+}
+
+.side-menu li {
+  margin: 1.7rem 0;
+}
+
+
+.side-menu li a {
+  color: #fff;
+  font-size: 2rem;
+  transition: all 300ms ease-in-out;
+  clip-path: polygon(4% 0, 100% 0%, 91% 100%, 0 92%);
+  padding: 0 2rem;
+}
+
+.side-menu li a:hover {
+  color: #2748b4;
+  background: #fefeee;
+  border: 1px solid #2748b4;
+  padding: 1.7rem 2.2rem;
+
+
+}
