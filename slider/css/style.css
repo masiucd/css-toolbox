@@ -1,0 +1,33 @@
+.volume-value {
+  font-size: 6em;
+  margin-bottom: 70px;
+  color: #fefefe;
+  text-shadow: 0 5p 20px rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  transition: 0.3s linear opacity;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%);
+}
+
+.volume-slider {
+  -webkit-appearance: none;
+  height: 8px;
+  width: 75%;
+  outline: none;
+  background: steelblue;
+  border-radius: 5px;
+  transition: 0.2s linear all;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.9);
+}
+
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  box-shadow: 0 0 2px rgba(5, 1, 1, 0.9);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #fefefe;
+  cursor: pointer;
+}
