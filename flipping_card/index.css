@@ -1,0 +1,74 @@
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.card-wrapper {
+  perspective: 700;
+}
+
+.card {
+  position: relative;
+
+  text-align: center;
+  line-height: 200px;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  transition: all .6s ease;
+  color: #feee;
+  font-size: 15px;
+  transform-style: preserve-3d;
+  box-shadow: 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.front,
+.back {
+  background: slateblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.back img {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  margin: 0;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+  /* transform: rotateX(180deg); */
+}
