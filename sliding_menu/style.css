@@ -1,0 +1,114 @@
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'DM Mono', monospace;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  height: 100%;
+}
+
+
+header {
+  width: 100%;
+  padding: 3rem;
+  position: relative;
+  background: #333;
+}
+
+.siteTitle {
+  text-align: center;
+  color: #fff
+}
+
+
+
+.mainNav {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navList {
+  list-style: none;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.navList li {
+  width: 100%;
+}
+
+.navList li a {
+  color: #fff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  width: 52%;
+  display: block;
+  margin-left: auto;
+  margin-top: 1rem;
+  background: rgba(0, 0, 0, 0.76);
+  transition: 300ms ease-in-out;
+  font-size: 15px;
+}
+
+
+.navList li a:hover {
+  background: rgba(0, 0, 0, 0.96);
+  font-size: 18px;
+}
+
+#navToggle {
+  position: absolute;
+  top: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 2;
+}
+
+
+.open {
+  transform: translateX(-50%);
+}
+
+
+main {
+  /* display: flex;
+flex-direction: column; */
+  max-width: 950px;
+  margin: 5rem auto;
+  flex: 1;
+}
+
+
+p {
+  font-size: 18px;
+  line-height: 2.45rem;
+}
