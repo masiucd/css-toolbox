@@ -112,3 +112,17 @@ p {
   font-size: 18px;
   line-height: 2.45rem;
 }
+
+@media(max-width:700px) {
+
+
+
+  .open {
+    transform: translateX(-30%);
+  }
+
+  .open li a {
+    width: 70%;
+    text-align: center;
+  }
+}
