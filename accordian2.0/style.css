@@ -1,0 +1,74 @@
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+  background: #33322244;
+}
+
+header {
+  padding: 2rem 1rem;
+  background: #333;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+header h1 {
+  padding: 1rem 0;
+}
+
+main {
+  max-width: 900px;
+  padding: 2rem;
+  margin: 5rem auto;
+}
+
+h2 {
+  font-size: 3rem;
+  padding: 1rem 0;
+  text-transform: capitalize;
+}
+
+p {
+  line-height: 2.5rem;
+  font-size: 18px;
+  padding: 2rem;
+}
+
+.accordian {
+  opacity: 0;
+  background: #fff;
+  padding: 0 2rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 400ms ease;
+  margin-top: 4rem;
+}
+
+.accordianTrigger {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.open {
+  opacity: 1;
+  padding: 2rem;
+  max-height: 500px;
+}
