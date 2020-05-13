@@ -1,0 +1,78 @@
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #333;
+  background: #fefe;
+}
+
+
+.wrapper {
+  border: 2px solid #333;
+  padding: 2rem;
+  width: 72rem;
+  height: 35rem;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.wrapper:hover .content-top {
+  top: -100%;
+  /* left: -100%; */
+
+}
+
+.box {}
+
+.content {
+  padding: 10rem;
+
+}
+
+.content h1 {
+  margin: 0;
+  text-align: center;
+
+}
+
+.content-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  transition: all 500ms ease;
+  transform: translateX(0%);
+}
+
+h1 span {
+  transition: all 300ms ease-in-out;
+  display: inline-block;
+  font-size: 5rem;
+}
+
+
+h1 span:hover {
+  transition: all 300ms;
+  z-index: 2;
+  transform: rotate(15deg) scale(2) translateX(-15px);
+  cursor: pointer;
+}
