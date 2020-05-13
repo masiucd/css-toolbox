@@ -1,0 +1,87 @@
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #e7d532;
+}
+
+
+.container {
+
+  padding: 4rem;
+  align-self: center;
+}
+
+.btn-wrapper {
+  cursor: pointer;
+  margin: 3rem;
+  display: inline-block;
+  position: relative;
+  transition: background 700ms ease;
+  box-shadow: 2px 5px rgba(0, 0, 0, 0.175);
+
+}
+
+
+.btn-wrapper:hover {
+  background: rgba(0, 0, 0, 0.575);
+
+}
+
+
+.btn-wrapper a {
+  width: 40rem;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 2px 1px #333;
+  line-height: 100px;
+  height: 100px;
+  text-transform: capitalize;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.btn-wrapper .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  outline: #fff solid 2px;
+  opacity: .2;
+  transition: all 700ms ease;
+
+}
+
+.btn-wrapper .bg:hover {
+  animation: pulse 700ms infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1, 1);
+    opacity: 0.2;
+  }
+
+  100% {
+    transform: scale(1.1, 1.35);
+    opacity: 0.5;
+  }
+}
