@@ -1,0 +1,75 @@
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 50vw;
+}
+
+
+.revel-wrapper {
+  border: solid 3px #333;
+  position: relative;
+  width: 26rem;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px #ccc;
+}
+
+.revel-wrapper:hover .revel-top {
+  height: 100%;
+
+}
+
+.revel-wrapper h1 {
+  /* padding: 10rem; */
+  font-size: 3rem;
+}
+
+
+.revel-content {
+
+  color: #333
+}
+
+
+
+.revel-top {
+  background: #24257cbd;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  overflow: hidden;
+  transition: all .6s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
