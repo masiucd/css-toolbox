@@ -1,0 +1,105 @@
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+article {
+  max-width: 1100px;
+  padding: 1em;
+}
+
+
+article h2 {
+  font-size: 4em;
+  padding: 1.5rem 0;
+}
+
+article h2 small {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+article p {
+  line-height: 3rem;
+  font-size: 2rem;
+  padding: 2rem 1rem;
+}
+
+
+section {
+  display: flex;
+  padding: 2em;
+}
+
+section p {
+  flex: 2;
+  align-self: center;
+}
+
+section img {
+  width: 20rem;
+  flex: 1;
+  border: 2px solid gold;
+  box-shadow: 2px 2px #ccc;
+}
+
+section:nth-of-type(2) {
+  /* flex-direction: column; */
+  margin: 4.5rem 0 2rem 0;
+  padding: 2em;
+}
+
+section .imgbg {
+  width: 100%;
+  height: 20rem;
+  flex: 1;
+  background-image: url('https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');
+  background-position: center;
+  background-attachment: inherit;
+}
+
+section:nth-of-type(2) .imgbg {
+  width: 30em;
+  margin: 0 auto;
+}
+
+
+blockquote {
+  font-size: 1.7em;
+  margin: 1rem 0 2rem 3rem;
+  padding: 2em 1em;
+  font-style: italic;
+  border-left: 3px solid #333;
+  font-weight: 500;
+  width: 80%;
+  line-height: 1.4;
+}
+
+
+article p:nth-of-type(2n) {
+  font-weight: 600;
+}
+
+article p:nth-of-type(2n + 4) {
+  color: rgb(107, 97, 37);
+}
