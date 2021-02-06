@@ -19,6 +19,7 @@
 
 - [About](#about)
 - [Selectors](#selectors)
+- [Margin Collapse](#margin-collapse)
 
 ## 🧐 About <a name = "about"></a>
 
@@ -74,7 +75,7 @@ p + .some-div {
 }
 ```
 
-sel first sibling _(paragraph)_
+select first sibling _(paragraph)_
 
 ```css
 .sibling-to-paragraphs + p {
@@ -83,6 +84,57 @@ sel first sibling _(paragraph)_
 ```
 
 <hr/>
+
+## Margin Collapse <a name ="margin-collapse"></a>
+
+The Top and bottom margins will sometimes be combined `(collapse/merged)`
+into a single margin. The element with the largest margin wins and we get the behavior of margin collapse.
+
+There are some reason for `margin collapsing`. **Like Mozilla says**!
+
+<!-- intilligande -->
+
+- Adjacent sibling
+  The margins of an adjacent sibling will collapse to the sibling with a higher margin.
+
+<!-- efterkommande -->
+
+- Nothing that separates parent element and descendants
+  Like using border,padding, inline part, block to separate the `margin-top`.
+
+- Empty blocks
+  - If there is no border, padding, inline content, height, or min-height to separate a block's margin-top from its margin-bottom, then its top and bottom margins collapse.
+
+_Some things to note:_
+
+\*More complex margin collapsing (of more than two margins) occurs when the above cases are combined.
+
+- These rules apply even to margins that are zero, so the margin of a descendant ends up outside its parent (according to the rules above) whether or not the parent's margin is zero.
+
+- When negative margins are involved, the size of the collapsed margin is the sum of the largest positive margin and the smallest (most negative) negative margin.
+
+- When all margins are negative, the size of the collapsed margin is the smallest (most negative) margin. This applies to both adjacent elements and nested elements.
+
+```css
+p {
+  font-size: 2rem;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+p:first-child {
+  background-color: palevioletred;
+  margin-bottom: 79px;
+}
+
+p ~ p {
+  background-color: powderblue;
+  margin-bottom: 45px;
+}
+```
+
+<hr/>
+
 ## ✍️ Author <a name = "author"></a>
 
 - [@masiucd](https://github.com/masiucd) - Idea & Initial work
